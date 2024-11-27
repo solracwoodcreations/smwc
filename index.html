@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d02d164750.js" crossorigin="anonymous"></script>
+
+     
+
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a class="icon-button xmark" target="blank">
+                <i class="fa-solid fa-xmark"></i></a>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Vlog</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+        <ul>
+            <li><a href="#">SMWC</a></li>
+            <li class="hideOnMobile"><a href="#">Home</a></li>
+            <li class="hideOnMobile"><a href="#">Blog</a></li>
+            <li class="hideOnMobile"><a href="#">Vlog</a></li>
+            <li class="hideOnMobile"></liclass> <a href="#">Contact</a></li>
+            <li class="menu-button" onclick=showSidebar()><a class="icon-button bars" target="blank">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+            </ul>
+             
+    </nav>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+     
+
+</body>
+</html>
